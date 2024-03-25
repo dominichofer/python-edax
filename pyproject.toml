@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edax"
+version = "4.4"
+dependencies = [
+    # Test dependencies
+    "pytest",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pylint]
+disable = [
+    "C0114",  # Missing module docstring
+    "C0115",  # Missing class docstring
+    "C0116",  # Missing function or method docstring
+]
