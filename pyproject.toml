@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "edax"
 version = "4.4"
+requires-python = ">= 3.10"
 dependencies = [
     # Test dependencies
     "pytest",
